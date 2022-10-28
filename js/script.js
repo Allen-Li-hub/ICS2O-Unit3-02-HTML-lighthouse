@@ -18,6 +18,16 @@ if (navigator.serviceWorker) {
 /**
  * This function displays an alert.
  */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+function calculateVolumeClicked () {
+
+// input
+const length = parseFloat(document.getElementById("length-of-pyramid").value)
+const width = parseFloat(document.getElementById("width-of-pyramid").value)
+const height = parseFloat(document.getElementById("height-of-pyramid").value)
+
+// process
+const volume = (length * width * height) / 3
+
+// output
+document.getElementById('volume').innerHTML = 'Volume is: ' + volume.toFixed(2) + ' mm³.'
 }
