@@ -18,16 +18,16 @@ if (navigator.serviceWorker) {
 /**
  * This function displays an alert.
  */
-function calculateVolumeClicked () {
+function calculateVolumeClicked() {
+  // input
+  const length = parseFloat(document.getElementById("length-of-pyramid").value)
+  const width = parseFloat(document.getElementById("width-of-pyramid").value)
+  const height = parseFloat(document.getElementById("height-of-pyramid").value)
 
-// input
-const length = parseFloat(document.getElementById("length-of-pyramid").value)
-const width = parseFloat(document.getElementById("width-of-pyramid").value)
-const height = parseFloat(document.getElementById("height-of-pyramid").value)
+  // process
+  const volume = (length * width * height) / 3
 
-// process
-const volume = (length * width * height) / 3
-
-// output
-document.getElementById('volume').innerHTML = 'Volume is: ' + volume.toFixed(2) + ' mm³.'
+  // output
+  document.getElementById("volume").innerHTML =
+    "Volume is: " + volume.toFixed(2) + " mm³."
 }
