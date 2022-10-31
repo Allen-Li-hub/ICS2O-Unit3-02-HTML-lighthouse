@@ -20,9 +20,9 @@ if (navigator.serviceWorker) {
  */
 function calculateVolumeClicked() {
   // input
-  const length = parseFloat(document.getElementById("length-of-pyramid").value)
-  const width = parseFloat(document.getElementById("width-of-pyramid").value)
-  const height = parseFloat(document.getElementById("height-of-pyramid").value)
+  const length = parseFloat(document.getElementById("length").value)
+  const width = parseFloat(document.getElementById("width").value)
+  const height = parseFloat(document.getElementById("height").value)
 
   // process
   const volume = (length * width * height) / 3
